@@ -89,11 +89,17 @@
 
 .why{
   display: grid;
-  grid-template-columns: 314.96px 649px;
+  grid-template-columns: repeat(2, 314.96px);
   margin-top: 60px;
 }
 
-.main__title {
+.why__grid {
+  grid-column-start: 2;
+  grid-column-end: auto;
+  gap: 20px;
+}
+
+.why__title {
   display: flex;
   justify-items: flex-start;
   color: var(--accent-color);
@@ -102,16 +108,7 @@
   line-height: 23.4px;
 }
 
-.multitask {
-  margin-bottom: 20px;
-}
-
-.dofamin{
-  grid-column-start: 2;
-  grid-column-end: auto;
-}
-
-.reason__title {
+.why__subtitle {
   font-family: "IBM Plex mono", sans-serif;
   display: flex;
   position: relative;
@@ -122,15 +119,15 @@
   align-items: right;
 }
 
-.reason__description {
+.why__text {
   font-family: "IBM Plex mono", sans-serif;
   color: #F1B2CE;
-  height: 211px;
+  height: 244px;
   width: 648.92px;
 }
 
 .what {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .what__grid {
@@ -139,15 +136,13 @@
   gap: 20px;
 }
 
-.main__title {
-  font-family: "IBM Plex mono", sans-serif;
+.what__title {
   display: flex;
-  position: relative;
-  background-color: var(--accent-color);
-  color: #000028;
-  height: 23px;
-  width: 649px;
-  align-items: right;
+  justify-items: flex-start;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-family: "IBM Plex mono", sans-serif;
+  line-height: 23.4px;
   margin-bottom: 20px;
 }
 
@@ -165,4 +160,58 @@
 .what__text {
   font-family: "IBM Plex mono", sans-serif;
   color: #F1B2CE;
+}
+
+.how{
+  display: grid;
+  grid-template-columns: 315px 649px;
+  margin-top: 60px;
+}
+
+.how__grid {
+  grid-column-start: 2;
+  grid-column-end: auto;
+  gap: 20px;
+}
+
+.how__title {
+  display: flex;
+  justify-items: flex-start;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-family: "IBM Plex mono", sans-serif;
+  line-height: 23.4px;
+  margin-bottom: 20px;
+}
+
+.how__second-title {
+  font-family: "IBM Plex mono", sans-serif;
+  display: flex;
+  position: relative;
+  background-color: var(--accent-color);
+  color: #000028;
+  height: 23px;
+  width: 649px;
+  align-items: right;
+  font-style: bold;
+  margin-bottom: 20px;
+}
+
+.how__subtitle {
+  font-family: "IBM Plex mono", sans-serif;
+  display: flex;
+  position: relative;
+  background-color: var(--accent-color);
+  color: #000028;
+  height: 23px;
+  width: 649px;
+  align-items: right;
+  
+}
+
+.how__text {
+  font-family: "IBM Plex mono", sans-serif;
+  color: #F1B2CE;
+  width: 648.92px;
+  margin-bottom: 20px;
 }
