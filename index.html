@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">
+
     <link rel="icon" href="./images/favicon.ico" sizes="any">
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
     <link rel="mobile-icon" href="./images/mobile-icon.png">
     <title>Сложно сосредоточиться</title>
     <script src="./scripts/script.js"></script>
-    <meta name="color-scheme" content="dark light">
   </head>
   <body class="page">
     <header class="header decorated-zone corner">
@@ -44,18 +46,19 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title header__title-text">
-        no focus
+      <h1 class="header__title">
+        <span class="header__title-text">no focus</span>
       </h1>
-      <div class="lamp">
+      <p class="paragraph paragraph__text">
+        Что делать, когда не можешь делать ничего<br>
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+      </p>
+      <div class="lamp" aria-hidden="true">
         REC
         <span class="lamp__dot">
         </span>
       </div>
-      <div class="paragraph paragraph__text">
-        Что делать, когда не можешь делать ничего<br>
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
-      </div>
+      
     </header>
     <main>
 
@@ -190,13 +193,16 @@
           alt="Улица"
           loading="lazy"
         >
-      </div>
+
+      </section>
     </main>
 
-    <footer class="footer corner">
-      <h1 class="footer__title footer__title-text">
-        focus
-      </h1>
+    <footer class="footer">
+      <h2 class="footer__title">
+        <span class="footer__title-text">
+          focus
+        </span>
+      </h2>
     </footer>
 
   </body>
