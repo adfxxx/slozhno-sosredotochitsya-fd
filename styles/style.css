@@ -93,7 +93,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--border-accent-color);
 }
 
 .corner::before {
@@ -112,7 +112,6 @@
 
 .paragraph {
   display: block;
-  max-width: 355px;
   max-height: 117px;
   margin: 0;
   padding: 0;
@@ -146,7 +145,6 @@
   color: var(--accent-color);
   font-size: 18px;
   line-height: 23.4px;
-  max-inline-size: 355px;
 }
 
 .why__text a,
@@ -369,13 +367,10 @@
     margin-bottom: 20px;
   }
 
-  .how {
-    padding-inline: 20px;
-  }
-
   .how{
     display: grid;
     gap: 20px;
+    padding-inline: 20px;
   }
 
   .how__grid {

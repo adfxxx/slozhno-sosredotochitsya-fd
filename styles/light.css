@@ -1,7 +1,8 @@
 :root.theme-light {
   --background-image: url("../images/cover-image-light.png");
   --background-color: #FFF1F7;
-  --accent-color: #FF8DDB;
+  --accent-color: #FF8DCB;
+  --border-accent-color: #353430;
   --main-text-color: #353430;
   --title-text-color: #FFC2E6;
   --title-decor-text-color: #353430;
@@ -11,6 +12,22 @@
 
 .theme-light .lamp {
   display: none;
+}
+
+.theme-light .header__theme-menu-item {
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border-color: var(--main-text-color);
+}
+
+.theme-light .why__title,
+.what__title,
+.how__title,
+.gallery__title {
+  color: var(--main-text-color);
 }
 
 @media (prefers-color-scheme: light) {
