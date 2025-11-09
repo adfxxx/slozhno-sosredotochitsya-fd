@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
 
+    <link rel="fonts" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
@@ -47,27 +48,19 @@
           </li>
         </ul>
       </nav>
-      <h1 class="header__title">
-        <span class="header__title-text">no focus</span>
-      </h1>
-      <p class="paragraph">
-        <span class="paragraph__text">
-          Что делать, когда не можешь делать ничего<br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
-        </span>
+      <h1 class="header__title header__title-text">no focus</h1>
+      <p class="paragraph paragraph__text">
+        Что делать, когда не можешь делать ничего<br />
+        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
-      <div class="lamp" aria-hidden="true">
-        REC
-        <span class="lamp__dot"> </span>
-      </div>
+      <div class="lamp" aria-hidden="true">REC</div>
     </header>
     <main>
       <section class="why">
-        <h2 class="why__title">Почему сосредоточиться так сложно</h2>
+        <h2 class="section__title">Почему сосредоточиться так сложно</h2>
         <div class="why__grid">
           <div>
-            <h3 class="why__subtitle">Многозадачность</h3>
+            <h3 class="section__subtitle why__subtitle">Многозадачность</h3>
             <p class="why__text">
               Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна
@@ -81,7 +74,7 @@
             </p>
           </div>
           <div>
-            <h3 class="why__subtitle">Дофамин</h3>
+            <h3 class="section__subtitle why__subtitle">Дофамин</h3>
             <p class="why__text">
               С гормонами стресса всё понятно, но дальше — ещё интереснее. В
               нашей невозможности сосредоточиться замешана и полная
@@ -97,14 +90,13 @@
       </section>
 
       <section class="what">
-        <h2 class="what__title">
-          Что снижает концентрацию<br />
-          внимания?
+        <h2 class="section__title what__title">
+          Что снижает концентрацию внимания?
         </h2>
 
         <div class="what__grid">
           <div>
-            <h3 class="what__subtitle">Многозадачность</h3>
+            <h3 class="section__subtitle">Многозадачность</h3>
             <p class="what__text">
               Как концентрация может снижаться из-за… концентрации? Любая
               стрессовая ситуация (и резко меняющийся мир в целом) заставляет
@@ -116,7 +108,7 @@
           </div>
 
           <div>
-            <h3 class="what__subtitle">Еда</h3>
+            <h3 class="section__subtitle">Еда</h3>
             <p class="what__text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
               доставляют в мозг энергию и помогают ему лучше работать. Но уходит
@@ -128,7 +120,7 @@
           </div>
 
           <div class="what__item">
-            <h3 class="what__subtitle">Гаджеты</h3>
+            <h3 class="section__subtitle">Гаджеты</h3>
             <p class="what__text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
               наушниках — подкаст, а на компьютере фоном — ещё и видео с
@@ -143,16 +135,16 @@
       </section>
 
       <section class="how">
-        <h2 class="how__title">
+        <h2 class="section__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
         <div class="how__grid">
-          <h3 class="how__second-title">
+          <h3 class="section__subtitle">
             5 простых (на самом деле не очень) советов
           </h3>
           <div>
-            <h3 class="how__subtitle">Представьте небо и облака</h3>
+            <h4 class="how__second-title">Представьте небо и облака</h4>
             <p class="how__text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -165,7 +157,7 @@
             </p>
           </div>
           <div>
-            <h3 class="how__subtitle">Включите музыку</h3>
+            <h4 class="how__second-title">Включите музыку</h4>
             <p class="how__text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -174,7 +166,7 @@
             </p>
           </div>
           <div>
-            <h3 class="how__subtitle">Прогуляйтесь</h3>
+            <h4 class="how__second-title">Прогуляйтесь</h4>
             <p class="how__text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
               <a href="#">показал</a>, что созерцание природы повышает
@@ -186,7 +178,7 @@
             </p>
           </div>
           <div>
-            <h3 class="how__subtitle">Хорошо ешьте</h3>
+            <h4 class="how__second-title">Хорошо ешьте</h4>
             <p class="how__text">
               Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
               которые препятствуют резким скачкам сахара в крови. Например, с
@@ -195,7 +187,7 @@
             </p>
           </div>
           <div>
-            <h3 class="how__subtitle">Читайте</h3>
+            <h3 class="how__second-title">Читайте</h3>
             <p class="how__text">
               Настоящие бумажные книги. Это правда помогает с концентрацией:
               чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -216,7 +208,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer corner">
       <h2 class="footer__title">
         <span class="footer__title-text"> focus </span>
       </h2>
