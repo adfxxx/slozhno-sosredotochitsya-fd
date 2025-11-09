@@ -65,13 +65,14 @@
   color: var(--accent-color);
   font-size: 18px;
   inset-block-start: 10px;
-  inset-inline-end: 19px;
+  inset-inline-end: 30px;
 }
 
 .lamp::after {
   content: "";
   position: relative;
   right: 5px;
+  left: 11px;
   display: inline-block;
   width: 9px;
   height: 9px;
