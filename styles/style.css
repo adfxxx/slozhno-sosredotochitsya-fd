@@ -10,6 +10,7 @@
 
 .header {
   display: grid;
+  height: 100vh;
   min-height: 668px;
   margin-block-end: 40px;
   padding: 10px;
@@ -139,8 +140,10 @@
 .section__title {
   display: block;
   color: var(--accent-color);
+  font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
   line-height: 23.4px;
+  letter-spacing: 0%;
 }
 
 .why__text a,
@@ -186,7 +189,10 @@
 .how__text {
   margin-bottom: 22px;
   color: var(--main-text-color);
+  font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: 0%;
 }
 
 .how {
@@ -250,7 +256,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (width >= 768px) and (width < 1024px) {
   .header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
@@ -281,13 +287,18 @@
   }
 
   .lamp {
-    inset-block-start: 19px;
-    inset-inline-end: 28px;
+    inset-block-start: 20px;
+    inset-inline-end: 40px;
   }
 
-  .corner::after {
-    bottom: 18px;
-    left: 18px;
+  header.corner::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  header.corner::after {
+    bottom: 20px;
+    left: 20px;
   }
 
   .paragraph {
@@ -335,9 +346,28 @@
     padding-inline: 20px;
   }
 
+  .how__grid .section__subtitle {
+    margin-top: 0;
+    font-family: "IBM Plex mono", sans-serif;
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+
+  .how .section__title {
+    grid-column: 1 / 2;
+    align-self: start;
+    font-family: "IBM Plex mono", sans-serif;
+    line-height: 23.4px;
+  }
+
   .how__grid {
     grid-column-start: 2;
     grid-column-end: auto;
+    margin-bottom: 20px;
+  }
+
+  .how__text {
+    margin: 0;
   }
 
   .section__title {
@@ -347,6 +377,9 @@
   .section__subtitle {
     width: 100%;
     margin-top: 0;
+    font-family: "IBM Plex mono", sans-serif;
+    font-size: 18px;
+    line-height: 23.4px;
   }
 
   .gallery__title {
@@ -401,6 +434,16 @@
     min-height: 1024px;
   }
 
+  .footer.corner::before {
+    top: 18px;
+    right: 18px;
+  }
+
+  .footer.corner::after {
+    bottom: 18px;
+    left: 18px;
+  }
+
   .footer__title-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -430,6 +473,7 @@
   .header__title {
     display: block;
     grid-column: 1 / -1;
+    grid-row: 1 / -1;
     justify-self: start;
     align-self: center;
     margin: 0;
@@ -440,10 +484,6 @@
   .header__theme-menu-list {
     display: flex;
     justify-content: center;
-  }
-
-  .header__title {
-    grid-row: 1 / -1;
   }
 
   .header.corner::before {
@@ -490,6 +530,8 @@
   .why__text {
     width: 649px;
     margin-bottom: 20px;
+    font-family: "IBM Plex mono", sans-serif;
+    line-height: 23.4px;
   }
 
   .what {
@@ -515,18 +557,22 @@
     margin-bottom: 20px;
     font-family: "IBM Plex mono", sans-serif;
     font-size: 18px;
+    line-height: 23.4px;
   }
 
   .how .section__title {
     grid-column: 1 / 2;
     align-self: start;
     margin-top: 0;
+    font-family: "IBM Plex mono", sans-serif;
+    line-height: 23.4px;
   }
 
   .how__text {
     grid-column: 2 / 3;
     margin-top: 0;
     margin-bottom: 20px;
+    font-family: "IBM Plex mono", sans-serif;
     line-height: 23.4px;
   }
 
@@ -534,6 +580,8 @@
     grid-column: 2 / 3;
     margin-top: 0;
     margin-bottom: 10px;
+    font-family: "IBM Plex mono", sans-serif;
+    line-height: 23.4px;
   }
 
   .how__grid {
