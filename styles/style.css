@@ -1,4 +1,5 @@
 .page {
+  min-width: 375px;
   max-width: 1024px;
   font-family: "IBM Plex mono", sans-serif;
   background-color: var(--background-color);
@@ -121,6 +122,7 @@
 .paragraph__text {
   display: block;
   color: var(--title-decor-text-color);
+  font-family: "IBM Plex mono", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -180,23 +182,26 @@
 }
 
 .why__text,
-.what__text {
-  color: var(--main-text-color);
-  font-size: 18px;
-  line-height: 23.4px;
-}
-
+.what__text,
 .how__text {
-  margin-bottom: 22px;
   color: var(--main-text-color);
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
 }
 
 .how {
   margin-top: 50px;
+  margin-bottom: 48px;
+}
+
+.how .section__title {
+  margin-bottom: 20px;
+}
+
+.how .section__subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .how__second-title {
@@ -453,7 +458,7 @@
   .header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content 1fr;
-    margin-bottom: 160px;
+    margin-bottom: 60px;
     padding: 0;
   }
 
@@ -477,7 +482,6 @@
     justify-self: start;
     align-self: center;
     margin: 0;
-    margin-top: 100px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -503,7 +507,7 @@
     align-self: end;
     max-width: 491px;
     margin-inline-end: 20px;
-    margin-block-end: 35px;
+    margin-block-end: 135px;
   }
 
   .why,
