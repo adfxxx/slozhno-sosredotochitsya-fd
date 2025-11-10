@@ -127,6 +127,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
+  letter-spacing: 0%;
 }
 
 .why,
@@ -148,7 +149,7 @@
   font-size: 18px;
   line-height: 23.4px;
   letter-spacing: 0%;
-  max-inline-size: 355px;
+  max-inline-size: max-content;
 }
 
 .why__text a,
@@ -197,6 +198,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
+  letter-spacing: 0%;
 }
 
 .how {
