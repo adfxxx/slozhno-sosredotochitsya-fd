@@ -161,12 +161,15 @@
 }
 
 .why__text:hover a,
-.how__text:hover a {
+.how__text:hover a,
+.why__text:focus-visible a,
+.how__text:focus-visible a {
   font-family: "IBM Plex mono", sans-serif;
   text-decoration: underline;
 }
 
-.why__text:active a {
+.why__text:active a,
+.how__text:active a {
   border: 1px solid var(--main-text-color);
   padding: 1px 3px 3px;
   font-family: "IBM Plex mono", sans-serif;
