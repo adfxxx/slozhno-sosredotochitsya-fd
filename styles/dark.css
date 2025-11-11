@@ -3,6 +3,7 @@
   --background-color: #000028;
   --border-accent-color: #ff0070;
   --accent-color: #ff0070;
+  --accent-color-transparent: rgba(255, 38, 116, 0.4);
   --main-text-color: #f1b2ce;
   --title-text-color: #db00ff;
   --title-decor-text-color: #000028;
@@ -14,14 +15,10 @@
 }
 
 .theme-dark .header__theme-menu-item {
-  color: var(--accent-color);
+  color: var(--border-accent-color);
   font-size: 18px;
 }
 
-.theme-dark .header__theme-menu-button:hover {
-  border-color: var(--accent-color);
-}
-
 .theme-dark .section__title {
-  color: var(--accent-color);
+  color: var(--border-accent-color);
 }
